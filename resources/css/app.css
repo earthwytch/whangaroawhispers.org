@@ -1,0 +1,28 @@
+@import 'tailwindcss';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+
+@theme {
+
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+
+    /* Site Structure */
+    --color-brand-navy: #171b24;      /* Top header, footer, and major article headlines */
+    --color-brand-subbar: #7e9dba;    /* "Connecting Our Community" utility bar, buttons */
+
+    /* Canvas & Surfaces */
+    --color-page-canvas: #c4cad6;     /* Main background behind articles */
+    --color-page-canvas-alt: #d5ddea; /* Alternate tint / calendar bar */
+    --color-page-surface: #e8e8e8;    /* Muted button backgrounds */
+    --color-pure-white: #fffefa;      /* Search inputs, light text on dark rows */
+
+    /* Text */
+    --color-copy-body: #171b24;       /* Primary headline & body text */
+    --color-copy-meta: #444444;       /* Dates, author names, bylines */
+
+    /* Accents (Promos, Badges, Ads) */
+    --color-accent-green: #2b4850;    /* Totara North Supplies / Community badges */
+    --color-accent-brown: #65411d;    /* Whangaroa Meats / Cafe sponsor cards */
+}
