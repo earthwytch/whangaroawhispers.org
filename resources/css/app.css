@@ -1,3 +1,7 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&display=swap');
+
 @import 'tailwindcss';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -5,12 +9,12 @@
 
 @theme {
 
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    --font-title: "Fira Sans", sans; 
+    --font-body: "M PLUS Rounded 1c", sans; 
 
     /* Site Structure */
     --color-brand-navy: #171b24;      /* Top header, footer, and major article headlines */
-    --color-brand-subbar: #7e9dba;    /* "Connecting Our Community" utility bar, buttons */
+    --color-brand-subbar: #54799C;    /* "Connecting Our Community" utility bar, buttons */
 
     /* Canvas & Surfaces */
     --color-page-canvas: #c4cad6;     /* Main background behind articles */
