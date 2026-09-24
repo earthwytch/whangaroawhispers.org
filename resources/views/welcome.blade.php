@@ -1,8 +1,4 @@
 <x-layouts.app>
-
-
-
-    <!-- 3. Main Body Content (On Slate Canvas, split into News & Sidebar) -->
     <x-row outerBg="bg-page-canvas" innerClass="py-8">
         <div class="grid grid-cols-1 lg:grid-cols-12 gap-8">
             
@@ -93,5 +89,4 @@
             </div>
         </div>
     </x-row>
-
 </x-layouts.app>

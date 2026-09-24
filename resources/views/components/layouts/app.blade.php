@@ -9,11 +9,9 @@
 </head>
 <body class="min-h-screen flex flex-col bg-page-canvas text-copy-body">
 
-    <!-- Header Landmark (Wraps both the top nav and the hero banner for WCAG compliance) -->
     <header role="banner">
         
-        <!-- 1. Top Navigation -->
-        <x-row outerBg="bg-brand-subbar" innerClass="py-4 flex justify-center items-center text-pure-white">
+        <x-row outerBg="bg-brand-subbar" class="shadow-xl" innerClass="py-4 flex justify-center items-center text-pure-white">
             <nav aria-label="Main Navigation" class="hidden md:flex gap-5 font-body tracking-wide items-center">
                 <a href="#" class="hover:text-brand-subbar" aria-label="Home">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true" focusable="false">
@@ -37,7 +35,7 @@
             <div class="max-w-7xl mx-auto h-full flex items-center px-4 sm:px-6 lg:px-8 w-full">
                 
                 <!-- w-full limits width on mobile to maintain x-margins. md:w-auto and max-w control desktop size -->
-                <div class="bg-brand-navy/70 backdrop-blur-sm px-6 py-4 rounded shadow-lg border border-pure-white/10 w-full md:w-auto md:max-w-xl lg:max-w-2xl">
+                <div class="bg-brand-navy/60 backdrop-blur-sm px-6 py-4 rounded shadow-lg border border-pure-white/10 w-full md:w-auto md:max-w-xl lg:max-w-2xl">
                     
                     <h1 class="text-4xl md:text-5xl font-title font-bold text-pure-white mb-2">Whangaroa Whispers</h1>
 
@@ -70,7 +68,9 @@
             </div>
             <div class="flex items-center gap-2">
                 <img src="{{ $weather->icon }}" alt="{{ $weather->condition }}" class="h-10" />
-                <p class="text-sm">{{ $weather->condition }}, {{ $weather->temp }}°C </p>
+                <p class="text-sm">{{ $weather->condition }}</p>
+                <p>|</p>
+                <p class="text-sm">{{ $weather->temp }}°C </p>
             </div>
             
         </div>
